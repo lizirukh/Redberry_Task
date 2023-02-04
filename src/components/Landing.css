@@ -1,0 +1,36 @@
+.landing {
+  background-image: url("../assets/background.png"), url("../assets/logo2.png");
+  background-position: left top, bottom 150px right 500px;
+  background-repeat: no-repeat;  
+  /* width: 100vw; */
+  height: 100vh;
+  position: relative;
+  background-size: auto;
+}
+
+.logo {
+  width: 230px;
+  height: 34px;
+  margin-left: 70px;
+  margin-top: 25px;
+}
+
+.hr{
+  width: 1565px;
+  top: 73px;
+  left: 67px;
+  border: 1px solid #1a1a1a;
+  position: absolute;
+}
+
+.button {
+  background-color: #1a1a1a; 
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 11px 90px;
+  font-size: 17px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  cursor: pointer;
+}
