@@ -1,0 +1,53 @@
+.header {
+  /* position: absolute; */
+ 
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* position: relative; */
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: coral;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-left: 73px;
+  margin-right: 70%;
+  text-align: left;
+  line-height: 30px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.pageNum {
+  /* flex: 50%; */
+  text-align: right;
+  margin-top: 25px;
+  margin-right: 75px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.line {
+  border: 1px solid #1a1a1a;
+  width: 82.5%;
+  position: absolute;
+  margin-left: 142px;  
+}
