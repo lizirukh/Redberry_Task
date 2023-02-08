@@ -24,6 +24,8 @@
 }
 
 .button {
+  font-family: "myFont";
+  font-feature-settings: "case";
   background-color: #1a1a1a; 
   border-radius: 5px;
   color: #ffffff;
