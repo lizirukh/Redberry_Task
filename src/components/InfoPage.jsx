@@ -1,21 +1,22 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Header from "./Header";
 import "./InfoPage.css";
 
 const InfoPage = () => {
-  const [name, setName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [error, setError] = useState(false);
+//   const [name, setName] = useState("");
+//   const [lastName, setLastName] = useState("");
+//   const [error, setError] = useState(false);
 
-  const handler = (e) => {
-    e.preventDefault();
-    if (name.length<2 || lastName.length<2) {
-        setError(true);
-    }
-    if (name&&lastName) {
-        console.log("First Name: ", name, "Last Name: ", lastName);
-    }
-  };
+//   const handler = (e) => {
+//     e.preventDefault();
+//     if (name.length<2 || lastName.length<2) {
+//         setError(true);
+//     }
+//     if (error) {
+//         // setName("item1True");
+//         console.log(name)
+//     }
+//   };
 
   return (
     <div className="container">
@@ -28,25 +29,41 @@ const InfoPage = () => {
             <input
               className="item1"
               placeholder="ანზორ"
-              onChange={(e) => setName(e.target.value)}
+            //   onClick={ handler }
             />
             {/* <br /> */}
             <label className="valError">მინიმუმ 2 ასო, ქართული ასოები</label>
           </div>
           <div>
-            <label className="lastname">გვარი</label>
+            <label className="lastName">გვარი</label>
             <br />
             <input
               className="item2"
               placeholder="მუმლაძე"
-              onChange={(e) => setLastName(e.target.value)}
+            //   onChange={(e) => setLastName(e.target.value)}
             />
             <label className="valError1">მინიმუმ 2 ასო, ქართული ასოები</label>
           </div>
         </div>
+        <div className="uploadingImg">
+            <label className="imgLab">პირადი ფოტოს ატვირთვა</label>
+            <input type="file" name="file"/>                
+        </div>
+        <div className="aboutMe">
+            <label className="ab">ჩემ შესახებ (არასავალდებულო)</label>
+            <input type="text" placeholder="ზოგადი ინფო შენ შესახებ" className="aboutMeText"/>
+        </div>
 
-        <div>
-          <button onClick={handler}>Submit</button>
+        <div className="emailCont">
+            <label className="eLab">ელ.ფოსტა</label>
+            <input type="text" placeholder="anzor666@redberry.ge" className="email"/>
+            <label className="emailVal">უნდა მთავრდებოდეს @redberry.ge-ით</label>
+        </div>
+
+        <div className="numberCont">
+            <label className="numLab">მობილურის ნომერი</label>
+            <input type="text" placeholder="+995 555 55 55 88" className="number"/>
+            <label className="numVal">უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</label>
         </div>
       </div>
 
