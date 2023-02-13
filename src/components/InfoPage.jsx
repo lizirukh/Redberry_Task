@@ -1,6 +1,8 @@
 // import React, { useState } from "react";
+import { useState } from "react";
 import Header from "./Header";
 import "./InfoPage.css";
+import Landing from "./Landing";
 
 const InfoPage = () => {
 //   const [name, setName] = useState("");
@@ -65,6 +67,8 @@ const InfoPage = () => {
             <input type="text" placeholder="+995 555 55 55 88" className="number"/>
             <label className="numVal">უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</label>
         </div>
+
+        <button type="submit">ᲨᲔᲛᲓᲔᲒᲘ</button>
       </div>
 
       <div className="CV"></div>
