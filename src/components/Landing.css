@@ -6,6 +6,7 @@
   height: 100vh;
   position: relative;
   background-size: auto;
+  /* align-items: center; */
 }
 
 .logo {
@@ -24,15 +25,17 @@
 }
 
 .button {
-  font-family: "myFont";
-  font-feature-settings: "case";
+  font-family: myFont;
+  /* font-feature-settings: "case"; */
   background-color: #1a1a1a; 
   border-radius: 5px;
   color: #ffffff;
+  width: 450px;
+  text-align: center;
   padding: 11px 90px;
   font-size: 17px;
   position: absolute;
-  top: 50%;
-  left: 40%;
+  top: 45%;
+  right: 40%;
   cursor: pointer;
 }
