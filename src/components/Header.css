@@ -6,7 +6,6 @@
 .container {
   display: flex;
   font-family: myFont;
-  /* justify-content: space-around; */
 }
 
 .btn {
@@ -17,14 +16,14 @@
   font-size: 20px;
   border-radius: 50%;
   border-style: solid;
-  border-color: coral;
+  /* border-color: coral; */
+  border: none;
   background-color: #ffffff;
   cursor: pointer;
 }
 
 .cont1 {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
